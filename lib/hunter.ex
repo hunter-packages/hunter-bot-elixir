@@ -1,0 +1,2 @@
+defmodule Hunter do
+end
