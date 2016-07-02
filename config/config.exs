@@ -8,7 +8,7 @@ config :hunter, Hunter.Robot,
   aka: "/",
   responders: [
     {Hedwig.Responders.Help, []},
-    {Hedwig.Responders.ShipIt, []}
+    {Hunter.Responders.Ping, []}
   ]
 
 # This configuration is loaded before any dependency and is restricted
