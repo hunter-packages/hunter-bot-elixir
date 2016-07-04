@@ -1,0 +1,5 @@
+---
+- name: Deploy Hunter Bot service
+  hosts: hunterbot
+  roles:
+    - hunterbot

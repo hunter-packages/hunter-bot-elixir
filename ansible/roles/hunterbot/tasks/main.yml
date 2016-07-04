@@ -1,0 +1,31 @@
+---
+
+# Create user for bot
+- name: Create hunter-bot-elixir group
+  group: name=hunter-bot-elixir state=present
+
+- name: Create hunter-bot-elixir user
+  user: name=hunter-bot-elixir group=hunter-bot-elixir createhome=yes shell=/bin/false
+
+# Install erlang on Ubuntu: http://elixir-lang.org/install.html#unix-and-unix-like
+- name: Create downloads directory
+  file: path=/home/hunter-bot-elixir/downloads state=directory mode=07555
+
+- name: Download erlang-*.deb
+  get_url:
+    url=https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb
+    dest=/home/hunter-bot-elixir/downloads/erlang-solutions_1.0_all.deb
+    sha256sum=ce542b6a27536a3ae4c3e8961287739d8b966e8e3a682ecda42cd17871fe22b9
+
+- name: Install erlang
+  apt: deb=/home/hunter-bot-elixir/downloads/erlang-solutions_1.0_all.deb
+
+# TODO: make the step optional (only if erlang not installed already)
+- name: Update cache
+  apt: update_cache=yes
+
+- name: Install esl-erlang
+  apt: name=esl-erlang state=present
+
+- name: Install erlang
+  apt: name=erlang state=present
