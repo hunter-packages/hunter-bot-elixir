@@ -24,8 +24,9 @@
 - name: Update cache
   apt: update_cache=yes
 
-- name: Install esl-erlang
-  apt: name=esl-erlang state=present
+# TODO: do we need this?
+#- name: Install esl-erlang
+#  apt: name=esl-erlang state=present
 
 - name: Install erlang
   apt: name=erlang state=present
