@@ -6,6 +6,7 @@
   "gun": {:hex, :gun, "1.0.0-pre.1", "28514327a7572234633e127c1c14c5d91991bc26ec16d3707f05962a31f0c1b5", [:rebar, :make], [{:ranch, "1.1.0", [hex: :ranch, optional: false]}, {:cowlib, "1.3.0", [hex: :cowlib, optional: false]}]},
   "hackney": {:hex, :hackney, "1.6.0", "8d1e9440c9edf23bf5e5e2fe0c71de03eb265103b72901337394c840eec679ac", [:rebar3], [{:ssl_verify_fun, "1.1.0", [hex: :ssl_verify_fun, optional: false]}, {:mimerl, "1.0.2", [hex: :mimerl, optional: false]}, {:metrics, "1.0.1", [hex: :metrics, optional: false]}, {:idna, "1.2.0", [hex: :idna, optional: false]}, {:certifi, "0.4.0", [hex: :certifi, optional: false]}]},
   "hedwig": {:git, "https://github.com/hedwig-im/hedwig.git", "b02b9fdaf921d20ac3e3586ce2454773c9f84e4a", []},
+  "hedwig_github": {:git, "https://github.com/fire/hedwig_github.git", "831fcf7a111ce3cdc8e532a8609f6d6ca9823582", []},
   "httpoison": {:hex, :httpoison, "0.9.0", "68187a2daddfabbe7ca8f7d75ef227f89f0e1507f7eecb67e4536b3c516faddb", [:mix], [{:hackney, "~> 1.6.0", [hex: :hackney, optional: false]}]},
   "idna": {:hex, :idna, "1.2.0", "ac62ee99da068f43c50dc69acf700e03a62a348360126260e87f2b54eced86b2", [:rebar3], []},
   "jsx": {:hex, :jsx, "2.6.2", "213721e058da0587a4bce3cc8a00ff6684ced229c8f9223245c6ff2c88fbaa5a", [:mix, :rebar], []},

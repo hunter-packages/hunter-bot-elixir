@@ -29,6 +29,6 @@ defmodule Hunter.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [{:hedwig, github: "hedwig-im/hedwig"},
-    {:hedwig_github, path: "../hedwig_github"}]
+    {:hedwig_github, github: "fire/hedwig_github"}]
   end
 end
